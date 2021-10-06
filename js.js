@@ -32,11 +32,11 @@ const copy = () =>{
     document.execCommand('copy');
     copyBtn.innerHTML = 'skopiowane'
     setTimeout(() =>{
-        copyBtn.innerHTML = 'podaj hasło'
+        copyBtn.innerHTML = 'kopiuj hasło'
     }, 2000)
 } else{ copyBtn.innerHTML = 'napisz coś'
     setTimeout(() =>{
-    copyBtn.innerHTML = 'podaj hasło'
+    copyBtn.innerHTML = 'kopiuj hasło'
 }, 1500)
     }
 }
