@@ -31,9 +31,13 @@ const copy = () =>{
         pass.select();
     document.execCommand('copy');
     copyBtn.innerHTML = 'skopiowane'
-} else{
-    copyBtn.innerHTML = 'napisz coś'
-        
+    setTimeout(() =>{
+        copyBtn.innerHTML = 'podaj hasło'
+    }, 2000)
+} else{ copyBtn.innerHTML = 'napisz coś'
+    setTimeout(() =>{
+    copyBtn.innerHTML = 'podaj hasło'
+}, 1500)
     }
 }
 
